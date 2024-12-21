@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insurance Plans Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="support-navbar">
+        <div class="language-dropdown">
+          <select class="language-dropdown">
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+          </select>
+        </div>
+        <ul class="right-options">
+          <li>
+            <a href="#" class="support-option"> Any queries? </a>
+          </li>
+          <li>
+            <a href="#" class="contact-option">
+              <i
+                class="fab fa-whatsapp"
+                style="margin-right: 5px; color: #25d366"
+              ></i>
+              WhatsApp to 9321003007
+            </a>
+          </li>
+          <li>
+            <a href="#" class="faq-option"> About Kotak Life </a>
+          </li>
+          <li>
+            <div class="support-dropdown">
+              <select>
+                <option value="#">Support</option>
+                <option value="#">Contact Us</option>
+                <option value="#">FAQ</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="main-navbar">
+        <div class="logo">
+          <img src="images/logo.png" alt="Term Insurance" class="icon" />
+        </div>
+        <ul>
+          <li>
+            <select>
+              <option value="#">Insurance Plans</option>
+            </select>
+          </li>
+          <li>
+            <select>
+              <option value="#">Calculators</option>
+            </select>
+          </li>
+          <li>
+            <select>
+              <option value="#">Claims</option>
+            </select>
+          </li>
+          <li>
+            <select>
+              <option value="#">How Do I Know</option>
+            </select>
+          </li>
+          <li>
+            <i class="fas fa-search" style="cursor: pointer"></i>
+          </li>
+          <li>
+            <button class="premium-btn">Pay Premium</button>
+          </li>
+          <li>
+            <button class="login-btn">
+              <i
+                class="fas fa-user"
+                style="margin-right: 5px; color: black"
+              ></i>
+              Login
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main-content">
+      <section class="dashboard">
+        <div class="dashboard-container" style="height: 77vh; width: 100%">
+          <div class="overlay"></div>
+          <h1>Protect your <span>future</span> today</h1>
+          <div class="dashboard-cards">
+            <div
+              class="dashboard-card"
+              style="
+                flex: 0 1 150px;
+                margin: 0 10px;
+                padding: 60px 10px 60px 10px;
+              "
+            >
+              <img src="images/TI.png" alt="Term Insurance" class="icon" />
+              <p>Term Insurance</p>
+            </div>
+            <div
+              class="dashboard-card"
+              style="
+                flex: 0 1 150px;
+                margin: 0px 10px;
+                padding: 60px 10px 60px 10px;
+              "
+            >
+              <div class="default-view">
+                <img src="images/Rp.png" alt="Retirement Plan" class="icon" />
+                <p class="default-text">Retirement Plan</p>
+              </div>
+              <div class="hover-content">
+                <div class="hover-content-overlay">
+                  <h2>Retirement Plans</h2>
+                  <p>
+                    Retirement planning refers to a multi-step process of
+                    defining retirement income goals and the strategy required
+                    to achieve the said goals.
+                  </p>
+                  <button class="view-products-btn">View Products</button>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="dashboard-card"
+              style="
+                flex: 0 1 150px;
+                margin: 0 10px;
+                padding: 60px 10px 60px 10px;
+              "
+            >
+              <img src="images/ULIP.png" alt="ULIP Plan" class="icon" />
+              <p>ULIP Plan</p>
+            </div>
+            <div
+              class="dashboard-card"
+              style="
+                flex: 0 1 150px;
+                margin: 0 10px;
+                padding: 60px 10px 60px 10px;
+              "
+            >
+              <img src="images/savings.png" alt="Savings Plan" class="icon" />
+              <p>Savings Plan</p>
+            </div>
+            <div
+              class="dashboard-card"
+              style="
+                flex: 0 1 150px;
+                margin: 0 10px;
+                padding: 60px 10px 60px 10px;
+              "
+            >
+              <img src="images/health.png" alt="Health Plans" class="icon" />
+              <p>Health Plans</p>
+            </div>
+          </div>
+        </div>
+        <div class="product-card" style="height: 100vh">
+          <div class="close-icon" onclick="closeProductCard()">✖</div>
+          <div class="product-card-image">
+            <img
+              src="images/RetirementPlan.png"
+              alt="Term Insurance"
+              class="icon"
+            />
+          </div>
+          <div class="product-card-content">
+            <h2><strong>Retirement</strong> Plans</h2>
+            <p>
+              Retirement planning refers to a multi-step process of defining
+              retirement income goals and the strategy required to achieve the
+              said goals.
+            </p>
+            <button>Learn More</button>
+
+            <div class="plan-options">
+              <div class="plan">
+                <img src="images/Rp.png" alt="Plan Image" class="plan-image" />
+                <h3>Extremely Plan</h3>
+                <div class="plan-company">Kotak</div>
+                <span>Assured Pension Plan</span>
+                <p class="plan-description">
+                  Secure your family with the best plan that Kotak offers.
+                </p>
+                <ul>
+                  <li>7% discount on online purchase</li>
+                  <li>Get upto 75 lakhs of coverage</li>
+                  <li>Low premiums and affordable</li>
+                </ul>
+                <div class="learn-more">Learn More ></div>
+                <button class="buy-online-btn">
+                  Buy Online <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+              <div class="plan">
+                <img
+                  src="images/ULIP.png"
+                  alt="Plan Image"
+                  class="plan-image-2"
+                />
+                <h3>Extremely Plan</h3>
+                <div class="plan-company">Kotak</div>
+                <span>Assured Pension Plan</span>
+                <p class="plan-description">
+                  Secure your family with the best plan that Kotak offers.
+                </p>
+                <ul>
+                  <li>7% discount on online purchase</li>
+                  <li>Get upto 75 lakhs of coverage</li>
+                  <li>Low premiums and affordable</li>
+                </ul>
+                <div class="learn-more2">Learn More ></div>
+                <button class="buy-online-btn2">
+                  Buy Online <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="image-quote-container">
+          <div class="quote-contact-card">
+            <div class="quote">
+              <p>
+                <strong>₹1Cr</strong> life cover at just
+                <strong>Rs.18 per day</strong>
+              </p>
+              <div class="quote-text">
+                Zero cost insurance with discounts up to 7.5%
+              </div>
+            </div>
+            <div class="contact-form">
+              <input type="text" placeholder="Name" />
+              <input type="email" placeholder="Email" />
+              <input type="tel" placeholder="Phone" />
+              <input type="date" placeholder="Date of Birth" />
+              <button>View Prices</button>
+            </div>
+            <div class="terms-advisor-container">
+              <div class="terms">
+                <input type="checkbox" id="terms" />
+                <label for="terms"
+                  >I agree to KLI and its representatives contacting me through
+                  call, SMS, email or WhatsApp.</label
+                >
+              </div>
+              <div class="advisor-links">
+                <span>Talk to our expert</span> <span>OR</span>
+                <span>Meet An Advisor</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
